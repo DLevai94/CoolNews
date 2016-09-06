@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+}
+.asd {
+    width: 100%;
+    height: 180px;
+    background-image: url("http://prog.hu/assets/site/text/quicknews/04418/big-data-suit--dyn--rss.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#rss1 {
+    padding: 50px;
+    background: #6e6e6e;
+}
