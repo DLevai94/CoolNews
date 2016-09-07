@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <script src="https://use.fontawesome.com/63c6f925ac.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
-          integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+          integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>CoolNews Admin</title>
@@ -37,25 +37,23 @@
     <h1>Add, edit and delete feeds</h1>
     <p>Can also mark them as favourite to show their content highlighted while browsing the news.</p>
     <hr>
-    <form>
-        <div class="row flex-items-md-bottom">
-            <div class="form-group col-md-3">
-                <label for="nameInput">Name</label>
-                <input type="text" id="nameInput" class="form-control">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="urlInput">URL</label>
-                <input type="url" id="urlInput" class="form-control">
-            </div>
-            <div class="form-group col-md-2">
-                <label for="counterInput">Counter</label>
-                <input type="number" id="counterInput" class="form-control" min="1" value="5">
-            </div>
-            <div class="form-group col-md-3">
-                <button id="addButton" class="btn btn-outline-primary"><i class="fa fa-plus"></i></button>
-            </div>
+    <div class="row">
+        <div class="form-group col-xs-3">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" class="form-control">
         </div>
-    </form>
+        <div class="form-group col-xs-4">
+            <label for="urlInput">URL</label>
+            <input type="url" id="urlInput" class="form-control">
+        </div>
+        <div class="form-group col-xs-2">
+            <label for="counterInput">Counter</label>
+            <input type="number" id="counterInput" class="form-control" min="1" value="5">
+        </div>
+        <div class="form-group col-xs-3  flex-xs-bottom">
+            <button id="addButton" class="btn btn-outline-primary"><i class="fa fa-plus"></i></button>
+        </div>
+    </div>
 </div>
 
 <footer class="container-fluid">
