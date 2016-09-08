@@ -18,3 +18,7 @@ footer {
 footer p {
     margin: 0;
 }
+
+#addButton {
+    margin-top: 32px;
+}
