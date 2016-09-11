@@ -28,14 +28,16 @@ function addNewFeedToStorage() {
     if (localStorage.getItem($nameInput.val()) === null) {
         localStorage.setItem($nameInput.val(), JSON.stringify(feedObject));
         alert("New feed is successfully stored!");
+        listStoredFeeds();
     } else {
         alert("Feed already exists with the given name!");
     }
 }
 
 function listStoredFeeds() {
+    $('#allFeeds').empty();
     $.each(localStorage, function (key, value) {
-        $('.jumbotron').append($newInputRow);
+        $('#allFeeds').append($newInputRow);
         $('.row:last').children()[0].getElementsByTagName('input')[0].value = JSON.parse(value).name;
         $('.row:last').children()[1].getElementsByTagName('input')[0].value = JSON.parse(value).url;
         $('.row:last').children()[2].getElementsByTagName('input')[0].value = JSON.parse(value).counter;
