@@ -1,18 +1,17 @@
 #rss1 {
     padding: 30px;
-    background: #6e6e6e;
+    background: #a1c436;
 }
 
 #rss2 {
     padding: 30px;
-    background: #4acb51;
+    /*background: #182945;*/
 }
 
 footer {
     color: #f2f2f2;
     background: #373a3c;
-    line-height: 80px;
-    height: 80px;
+    padding: 10px;
 }
 
 footer p {
@@ -21,4 +20,26 @@ footer p {
 
 #addButton {
     margin-top: 32px;
+}
+
+.navbar {
+    padding: 0 1rem;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-item {
+    font-weight: 600;
+    padding: .5rem;
+}
+
+.navbar .navbar-nav > .active {
+    color: #000;
+    background: #a1c436;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #000;
+    background: #a1c436;
 }
