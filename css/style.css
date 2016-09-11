@@ -1,3 +1,7 @@
+body {
+    background: url("../dust.png");
+}
+
 .feed-title {
     margin: 2rem 0;
     border-bottom: 2px solid #A1C436;
@@ -175,4 +179,9 @@ footer p {
 
 #addButton {
     margin-top: 32px;
+}
+
+#hello {
+    margin: 0;
+    background: url("../dust.png") fixed;
 }
