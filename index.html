@@ -13,144 +13,48 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-sticky-top navbar-light bg-faded" role="navigation">
+    <nav class="navbar navbar-sticky-top navbar-light bg-faded" id="main-nav" role="navigation">
+        <a class="navbar-brand text-uppercase" href="#">CoolNews</a>
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
                 data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false"
                 aria-label="Toggle navigation">
             &#9776;
         </button>
-        <div class="collapse navbar-toggleable-xs" id="nav-collapse">
-            <a class="navbar-brand text-uppercase" href="#">CoolNews</a>
-            <ul class="nav navbar-nav pull-sm-right">
+        <div class="clearfix hidden-md-up"></div>
+        <ul class="nav navbar-nav navbar-toggleable-sm collapse clearfix pull-sm-right" id="nav-collapse">
                 <li class="nav-item active">
                     <a class="nav-link text-uppercase" href="#"><i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-uppercase" href="admin.html"><i class="fa fa-dashboard"></i> Dashboard</a>
                 </li>
-            </ul>
-        </div>
+        </ul>
     </nav>
 </header>
-<section class="container-fluid" id="rss1">
+<section class="navbar navbar-sticky-top navbar-light bg-primary" id="feed-toggler">
     <div class="container">
-        <div class="row">
-            <h2 class="text-uppercase"><i class="fa fa-star-o"></i> Favorite Feed</h2>
-        </div>
-        <div class="row flex-items-xs-middle">
-            <div class="col-sm-12 col-md">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/318x180" width="100%"
-                         alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.<br>
-                            <small>Date: 09-06-2016</small>
-                        </p>
-                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/318x180" width="100%"
-                         alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.<br>
-                            <small>Date: 09-06-2016</small>
-                        </p>
-                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/318x180" width="100%"
-                         alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.<br>
-                            <small>Date: 09-06-2016</small>
-                        </p>
-                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa fa-rss"></i> All feeds</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-star-o"></i> Favorite</a>
+            </li>
+        </ul>
     </div>
 </section>
-<section class="container-fluid" id="rss2">
-    <div class="container">
-        <div class="row">
-            <h2 class="text-uppercase"><i class="fa fa-rss"></i> Rss Feed</h2>
-        </div>
-        <div class="row flex-items-xs-middle">
-            <div class="col-sm-12 col-md">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/318x180" width="100%"
-                         alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.<br>
-                            <small>Date: 09-06-2016</small>
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/318x180" width="100%"
-                         alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.<br>
-                            <small>Date: 09-06-2016</small>
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md">
-                <div class="card">
-                    <img class="card-img-top img-fluid" src="http://placehold.it/318x180" width="100%"
-                         alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of
-                            the
-                            card's content.<br>
-                            <small>Date: 09-06-2016</small>
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="container-fluid" id="feed-container">
+    <div class="container" id="feeds">
+
     </div>
 </section>
 <footer class="container-fluid">
     <div class="container">
         <p class="text-xs-center">
-            <small> <a href="https://dlevai94.github.io/CoolNews">CoolNews <i class="fa fa-rss"></i></a> | Made by <a href="http://github.com/atillaszikora">Atilla
-                Szikora</a> & <a href="http://davidlevai.com">Dávid Lévai</a><br> <a href="about.html">About</a> |  <a href="http://davidlevai.com/#contact">Hire Us</a>
+            <small><a href="https://dlevai94.github.io/CoolNews">CoolNews <i class="fa fa-rss"></i></a> | Made by <a
+                    href="http://github.com/atillaszikora">Atilla
+                Szikora</a> & <a href="http://davidlevai.com">Dávid Lévai</a><br> <a href="about.html">About</a> | <a
+                    href="http://davidlevai.com/#contact">Hire Us</a>
             </small>
         </p>
     </div>
@@ -165,5 +69,6 @@
         integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

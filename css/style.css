@@ -1,14 +1,42 @@
-#rss1 {
-    padding: 30px;
-    background: #a1c436;
+.feed-title {
+    margin: 2rem 0;
+    border-bottom: 2px solid #A1C436;
 }
 
-#rss2 {
-    padding: 30px;
-    /*background: #182945;*/
+.media {
+    padding: .5rem;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.media:hover {
+    background: #c5c5cc;
+}
+
+.favorite {
+    color: #d6b400;
+}
+
+.favorite:before {
+    font-family: FontAwesome;
+    color: #d6b400;
+    content: '\f005';
+}
+
+#feed-toggler {
+    z-index: 1;
+    /*-webkit-box-shadow: 2px 2px 70px 70px #295e83;*/
+    /*-moz-box-shadow: 2px 2px 70px 70px #295e83;*/
+    /*box-shadow: 2px 2px 70px 70px #295e83;*/
 }
 
 footer {
+    -webkit-box-shadow: inset 0 2px 2px 2px rgba(34, 36, 37, 1);
+    -moz-box-shadow: inset 0 2px 2px 2px rgba(34, 36, 37, 1);
+    box-shadow: inset 0 2px 2px 2px rgba(34, 36, 37, 1);
     color: #f2f2f2;
     background: #373a3c;
     padding: 10px;
@@ -18,9 +46,9 @@ footer p {
     margin: 0;
 }
 
-#addButton {
-    margin-top: 32px;
-}
+/* --------------------
+   NAVBAR & NAV MODS
+--------------------- */
 
 .navbar {
     padding: 0 1rem;
@@ -30,16 +58,121 @@ footer p {
 .navbar .navbar-nav .nav-item {
     font-weight: 600;
     padding: .5rem;
+    margin: 0;
 }
 
-.navbar .navbar-nav > .active {
-    color: #000;
-    background: #a1c436;
+.navbar .navbar-nav .nav-link {
+    color: #4f4f4f;
 }
 
+.navbar .navbar-nav > .active,
 .navbar .navbar-nav > .active > a,
 .navbar .navbar-nav > .active > a:hover,
-.navbar .navbar-nav > .active > a:focus {
-    color: #000;
+.navbar .navbar-nav > .active > a:focus,
+.navbar .navbar-nav > .active > .nav-link,
+.navbar .navbar-nav > .active > .nav-link:hover,
+.navbar .navbar-nav > .active > .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-item:hover,
+.navbar .navbar-nav .nav-item:focus {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    color: #fff;
     background: #a1c436;
+}
+
+.navbar#main-nav {
+    z-index: 999;
+    -webkit-box-shadow: 0 2px 2px 2px #295e83;
+    -moz-box-shadow: 0 2px 2px 2px #295e83;
+    box-shadow: 0 2px 2px 2px #295e83;
+}
+
+.nav-pills .nav-link {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link:hover {
+    background: rgba(50, 119, 165, 0.6);
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:hover {
+    background: rgba(50, 119, 165, 0.6);
+    color: rgba(255, 255, 255, .6);
+}
+
+/* --------------------
+   NAV JUSTIFIED
+--------------------- */
+
+.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+
+.nav-justified .nav-item {
+    float: none;
+}
+
+.nav-justified .nav-link {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+
+@media (min-width: 544px) {
+    .nav-justified .nav-item {
+        display: table-cell;
+        width: 1%;
+    }
+
+    .nav-justified .nav-link {
+        margin-bottom: 0;
+    }
+}
+
+.nav-justified .nav-link {
+    margin-right: 0;
+    border-radius: 0.25rem;
+}
+
+.nav-justified .nav-link.active,
+.nav-justified .nav-link.active:hover,
+.nav-justified .nav-link.active:focus {
+    background: rgba(50, 119, 165, 0.6);
+}
+
+@media (min-width: 544px) {
+    .nav-justified .nav-link {
+        border-radius: 0.25rem 0.25rem 0 0;
+    }
+
+    .nav-justified .nav-link.active,
+    .nav-justified .nav-link.active:hover,
+    .nav-justified .nav-link.active:focus {
+        background: rgba(50, 119, 165, 0.6);
+    }
+}
+
+/* ---------------
+   ADMIN MODS
+---------------- */
+
+#addButton {
+    margin-top: 32px;
 }
