@@ -1,6 +1,8 @@
+var szam = 8;
+
 function getFeedFromUrl(url) {
     $.ajax({
-        url: 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent(url),
+        url: 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=' + szam + '&callback=?&q=' + encodeURIComponent(url),
         dataType: 'json',
         success: function (data) {
             if (data.responseData.feed && data.responseData.feed.entries) {
@@ -21,4 +23,6 @@ $(document).ready( function () {
     getFeedFromUrl("http://origo.hu/contentpartner/rss/itthon/origo.xml");
     getFeedFromUrl("http://www.feedforall.com/sample.xml");
     getFeedFromUrl("http://prog.hu/site/backend/proghu-rss.xml");
+    getFeedFromUrl("http://index.hu/24ora/rss/");
+    // getFeedFromUrl("dsafgkjl");
 });

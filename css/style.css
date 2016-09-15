@@ -1,5 +1,22 @@
 body {
-    background: url("../dust.png");
+    background: url("../assets/dust.png");
+}
+
+a:hover,
+a:focus {
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms;
+    background: #46A5E5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 2px;
+}
+
+#feeds {
+    padding: 30px;
 }
 
 .feed-title {
@@ -17,7 +34,12 @@ body {
 }
 
 .media:hover {
-    background: #c5c5cc;
+    background: #46A5E5;
+    color: #ffffff;
+}
+
+.media:hover a {
+    color: #eeeeee;
 }
 
 .favorite {
@@ -183,5 +205,5 @@ footer p {
 
 #hello {
     margin: 0;
-    background: url("../dust.png") fixed;
+    background: url("../assets/dust.png") fixed;
 }

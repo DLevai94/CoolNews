@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <script src="https://use.fontawesome.com/63c6f925ac.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
           integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
@@ -12,8 +14,8 @@
     <title>CoolNews Reader</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-sticky-top navbar-light bg-faded" id="main-nav" role="navigation">
+<header class="animated fadeInDown">
+    <nav class="navbar navbar-sticky-top navbar-light bg-faded animated fadeInDown" id="main-nav" role="navigation">
         <a class="navbar-brand text-uppercase" href="#">CoolNews</a>
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
                 data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false"
@@ -30,17 +32,17 @@
             </li>
         </ul>
     </nav>
-</header>
 
-<div class="jumbotron" id="hello">
-    <div class="container">
-        <h1>Howdy?</h1>
-        <p>I heard, you want to keep up with th latest news about your interests.</p>
-        <hr>
-        <div class="row">
+    <div class="jumbotron" id="hello">
+        <div class="container">
+            <h1>Hey</h1>
+            <p>I heard, you want to keep up with the latest news about your interests.</p>
+            <hr>
+            <p>It's so simple. Just input your feed's name and URL on the <a href="admin.html">dashboard</a> and get
+                back here.</p>
         </div>
     </div>
-</div>
+</header>
 <section class="navbar navbar-sticky-top navbar-light bg-primary" id="feed-toggler">
     <div class="container">
         <ul class="nav nav-pills nav-justified">
@@ -48,7 +50,7 @@
                 <a class="nav-link active" href="#"><i class="fa fa-rss"></i> All feeds</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-star-o"></i> Favorite</a>
+                <a class="nav-link" href="#"><i class="fa fa-star-o"></i> Favorite feeds</a>
             </li>
         </ul>
     </div>
