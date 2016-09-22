@@ -11,7 +11,7 @@ function getFeedFromUrl(url) {
                 $(feedRow).appendTo('#feeds');
                 $(feedTitle).appendTo('.feed-items:last');
                 $.each(data.responseData.feed.entries, function (i, e) {
-                    var article = '<div class="col-sm-12 col-md-6"><div class="media"><div class="media-body"><h4 class="media-heading">' + e.title + '</h4><p class="lead">' + e.contentSnippet + ' <a class="" href="' + e.link + '">More <i class="fa fa-angle-double-right"></i></a></p><p><small id="feed-item-date">Date: ' + e.publishedDate + '</small></p></div></div></div>';
+                    var article = '<div class="col-sm-12 col-md-6"><div class="media"><div class="media-body"><h4 class="media-heading">' + e.title + '</h4><p class="lead">' + e.contentSnippet + '</p></div></div><div class="media-bottom"><p><small id="feed-item-date">Date: ' + e.publishedDate + '</small><a class="pull-right btn-media" href="' + e.link + '">More <i class="fa fa-angle-double-right"></i></a></p></div></div>';
                     $(article).appendTo('.feed-items:last');
                 });
             }
@@ -19,7 +19,7 @@ function getFeedFromUrl(url) {
     });
 }
 
-$(document).ready( function () {
+$(document).ready(function () {
     getFeedFromUrl("http://origo.hu/contentpartner/rss/itthon/origo.xml");
     getFeedFromUrl("http://www.feedforall.com/sample.xml");
     getFeedFromUrl("http://prog.hu/site/backend/proghu-rss.xml");
